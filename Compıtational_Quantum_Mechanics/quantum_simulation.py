@@ -20,3 +20,10 @@ bell_state = np.dot(cnot, bell_state)
 qubit1 = np.dot(hadamard, qubit1)
 print("The final state of qubit1:\n", qubit1)
 print("The final state of the Bell state:\n", bell_state)
+
+
+""""
+This code creates the Bell state with a quantum connection between two qubits and manipulates this state using quantum gates such
+as the Hadamard matrix and the CNOT gate. 
+
+""""
