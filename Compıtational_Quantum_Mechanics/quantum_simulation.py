@@ -8,3 +8,6 @@ bell_state = np.kron(qubit1, qubit2) * np.sqrt(2)
 
 # create the Hadamard matrix
 hadamard = np.array([[1, 1], [1, -1]]) / np.sqrt(2)
+
+# apply the Hadamard matrix to the first qubit
+qubit1 = np.dot(hadamard, qubit1)
