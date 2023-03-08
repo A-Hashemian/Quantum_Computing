@@ -15,3 +15,8 @@ qubit1 = np.dot(hadamard, qubit1)
 # break the quantum connection between the first and second qubits in the Bell state
 cnot = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]])
 bell_state = np.dot(cnot, bell_state)
+
+#apply the Hadamard matrix to the first qubit again and print the results
+qubit1 = np.dot(hadamard, qubit1)
+print("The final state of qubit1:\n", qubit1)
+print("The final state of the Bell state:\n", bell_state)
